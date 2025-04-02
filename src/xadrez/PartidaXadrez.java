@@ -26,5 +26,6 @@ public class PartidaXadrez {
 	private void initialSetup() {
 		board.placePeca(new Torre(board,Cor.WHITE), new Posicao(2,1));
 		board.placePeca(new Rei(board,Cor.BLACK), new Posicao(7,3));
+		board.placePeca(new Rei(board,Cor.BLACK), new Posicao(7,3));
 	}
 }

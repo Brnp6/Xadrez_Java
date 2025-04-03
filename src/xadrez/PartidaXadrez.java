@@ -22,10 +22,16 @@ public class PartidaXadrez {
 		}
 		return mat;
 	}
+	private void placeNewPeca(char coluna, int linha, PecaXadrez peca) {
+		board.placePeca(peca,  new XadrezPosicao(coluna,linha).toPosicao());
+	}
+	
      
 	private void initialSetup() {
-		board.placePeca(new Torre(board,Cor.WHITE), new Posicao(2,1));
-		board.placePeca(new Rei(board,Cor.BLACK), new Posicao(7,3));
-		board.placePeca(new Rei(board,Cor.BLACK), new Posicao(7,3));
+		placeNewPeca('b', 6, new Torre(board,Cor.WHITE));
+		placeNewPeca('e',8, new Torre(board,Cor.BLACK));
+		placeNewPeca('e',1, new Rei(board,Cor.BLACK));
+		
+		
 	}
 }

@@ -42,7 +42,7 @@ public class Board {
 	
 	public void placePeca(Peca peca, Posicao posicao) {
 		if(temPeca(posicao)) {
-			throw new BoardException("Já Existe uma peça nessa posição"+posicao);
+			throw new BoardException("Já Existe uma peça nessa posição "+posicao);
 		}
 		pecas[posicao.getLinha()][posicao.getColuna()] = peca;
 		peca.posicao = posicao;

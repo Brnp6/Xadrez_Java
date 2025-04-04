@@ -11,8 +11,8 @@ public class PecaXadrez extends Peca{
 		this.color = cor;
 	}
 
-	public void setCor(Cor cor) {
-		this.color = cor;
+	public Cor getCor() {
+		return color;
 	}
 	
     

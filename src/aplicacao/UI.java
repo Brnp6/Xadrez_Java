@@ -28,7 +28,16 @@ public class UI {
 	public static final String ANSI_PURPLE_BACKGROUND = "\u001B[45m";
 	public static final String ANSI_CYAN_BACKGROUND = "\u001B[46m";
 	public static final String ANSI_WHITE_BACKGROUND = "\u001B[47m";
-
+	
+	
+	//Aula tratando exceções elimpando a tela
+	public static void limparTela() {
+		System.out.println("\033[H\033[2J");
+		System.out.flush();
+	}
+	
+	
+	
 	//Aula movendo peças
 	public static XadrezPosicao lerXadrezPosicao(Scanner sc) {
 	   try {
@@ -51,7 +60,7 @@ public class UI {
 			}
 			System.out.println();
 		}
-		System.out.println("a b c d e f g h");
+		System.out.println("  a b c d e f g h");
 	}
 
 	/*
